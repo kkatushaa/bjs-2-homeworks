@@ -5,7 +5,7 @@ function solveEquation(a, b, c) {
 
 
   if (d === 0) {
-    arr = [(b/(2*a))];
+    arr = [-b/(2*a)];
   } else if (d > 0) {
     let const1 = (-b + Math.sqrt(d) )/(2*a);
     let const2 = (-b - Math.sqrt(d) )/(2*a);
