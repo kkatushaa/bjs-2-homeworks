@@ -6,16 +6,11 @@ function solveEquation(a, b, c) {
   let d = b ** 2 - 4* a * c
 
 
-  if (d  < 0) { 
-    arr = [] 
-  }
-  else if (d  === 0) {
-    const1 = -b/(2*a)
-    arr = [const1];
-  }
-  else if (d > 0) {
-    const1 = [(-b + Math.sqrt(d) )/(2*a)]
-    const2 = [(-b - Math.sqrt(d) )/(2*a)]
+  if (d  === 0) {
+    arr = [b/(2*a)];
+  } else if (d > 0) {
+    const1 = (-b + Math.sqrt(d) )/(2*a)
+    const2 = (-b - Math.sqrt(d) )/(2*a)
     arr = [const1, const2]
   }
   return arr;
